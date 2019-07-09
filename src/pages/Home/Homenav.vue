@@ -18,6 +18,7 @@
    left,orange,#FA4DBE
   )
   .input
+    border-radius .20rem
     height .3rem
     width 3rem
     position absolute

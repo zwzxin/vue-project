@@ -32,7 +32,9 @@
    
   </swiper>
         </div>
-         <div class="miaosha-brand"></div>
+         <div class="miaosha-brand">
+           <img src="https://img.alicdn.com/imgextra/i2/2053469401/O1CN018T7S7S2JJhx0tTGNe_!!2053469401.gif_430x430q90.jpg" alt="">
+         </div>
       <div class="home-icons">
       <li>
        <img src="https://m.huanle800.com/data/upload/waplink/1812/14/5c13a39ee8296.png">
@@ -181,10 +183,12 @@ export default {
           width 100%
           height 100%
     .miaosha-brand
-      height 1.03rem
+      
       width 100%
-      background url(https://img.alicdn.com/imgextra/i2/2053469401/O1CN018T7S7S2JJhx0tTGNe_!!2053469401.gif_430x430q90.jpg)
-      background-size 100% 100%
+      margin-bottom 0.27rem
+      img
+        height 100%
+        width 100%
     .home-icons
       height 1.02rem
       padding-top 0.14rem

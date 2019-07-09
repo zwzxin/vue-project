@@ -46,7 +46,7 @@ export default {
     })
     this.rowList = result.data.data
     Indicator.close()
-    console.log( this.rowList)
+    // console.log( this.rowList)
    this.$nextTick(()=>{
    let bScroll = new BScroll('.row-out',{
       click:true,

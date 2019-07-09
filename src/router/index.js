@@ -7,7 +7,8 @@ import Index from '../pages/Index'
 import Home from '../pages/Home/Home'
 import Pinkage from '../pages/Pinkage/Pinkage'
 import Profile from '../pages/Profile/Profile'
-
+import Login from '../pages/Login/Login'
+import Register from '../pages/Register/Register'
 import Detail from '../pages/detail/Detail'
 
 Vue.use(VueRouter)
@@ -40,6 +41,16 @@ let routes = [
         path:'/detail/:id',
         name:'detail',
         component:Detail
+    },
+    {
+        path:'/login',
+        name:'login',
+        component:Login
+    },
+    {
+        path:'/register',
+        name:'register',
+        component:Register
     }
   
   

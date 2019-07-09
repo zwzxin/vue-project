@@ -51,7 +51,7 @@ export default {
       
     })
     this.pinkageitemList = result.data.data
-    console.log(this.pinkageitemList)
+    // console.log(this.pinkageitemList)
    
     Indicator.close()
 

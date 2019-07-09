@@ -6,8 +6,10 @@
               <img src="https://m.huanle800.com/static/wap/images/user_info_tx.png" alt="">
           </div>
           <div class="zd">
-              <div class="register">注册/</div>
-              <div class="login">登录</div>
+              <!-- <div class="register">注册/</div>
+              <div class="login">登录</div> -->
+               <router-link to="/register" tag="div" class="register">注册/</router-link>
+              <router-link to="/login" tag="div" class="login">登录</router-link>
           </div>
       </div>
   </div>

@@ -39,7 +39,7 @@ export default {
       url:'/ajax/?m=ajax&a=ajaxnew&page=6'
     })
     this. rowListthree = result.data.data
-    console.log( this. rowListthree)
+    // console.log( this. rowListthree)
    this.$nextTick(()=>{
    let bScrollthree = new BScroll('.row-outthree',{
       click:true,

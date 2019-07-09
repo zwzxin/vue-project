@@ -5,28 +5,17 @@
         </main>
         <nav>
             <ul>
-                <router-link to="/Home" tag="li" class="active">
-                <i class="iconfont">
-                    <img src="https://img.alicdn.com/imgextra/i4/2053469401/TB24KbjnZj_B1NjSZFHXXaDWpXa-2053469401.png">
-                </i>
+                <router-link to="/Home" tag="li" active-class="active">
+                <i class="iconfont">&#xe626;</i>
                 <b>首页</b>
                 </router-link>
-                <router-link to="/Pinkage" tag="li" class="active">
-                <i class="iconfont">
-                    <img src="https://img.alicdn.com/imgextra/i4/2053469401/TB24KbjnZj_B1NjSZFHXXaDWpXa-2053469401.png">
-                </i>
+                <router-link to="/Pinkage" tag="li" active-class="active">
+                <i class="iconfont">&#xe6bf;</i>
                 <b>9.9包邮</b>
                 </router-link>
-                <router-link to="/category" tag="li" class="active">
-                <i class="iconfont">
-                    <img src="https://img.alicdn.com/imgextra/i4/2053469401/TB24KbjnZj_B1NjSZFHXXaDWpXa-2053469401.png">
-                </i>
-                <b>分类</b>
-                </router-link>
-                <router-link to="/Profile" tag="li" class="active">
-                <i class="iconfont">
-                    <img src="https://img.alicdn.com/imgextra/i4/2053469401/TB24KbjnZj_B1NjSZFHXXaDWpXa-2053469401.png">
-                </i>
+              
+                <router-link to="/Profile" tag="li" active-class="active">
+                <i class="iconfont">&#xe8a0;</i>
                 <b>我的</b>
                 </router-link>
             </ul>
@@ -51,6 +40,12 @@ data(){
 
 
 <style lang="stylus" scoped>
+@font-face {
+   font-family mytwoFont
+   src: url('../assets/iconfont/iconfont.ttf')
+        url('../aseets/iconfont/iconfont.woff') 
+   font-weight bold
+}
 @import '~@/assets/styles/border.styl'
 .index-container
   height 100%
@@ -76,17 +71,18 @@ data(){
          align-items center
          font-size .12rem
          transform scale(1)
-         i
-           width .32rem
-           height  .32rem
-           text-align center
-           img
-             width 100%
-             height 100%
-         b
+         .iconfont
+           color: black ;
+           font-size .32rem
+           font-family: mytwoFont;
+          b
+          
            font-weight normal
-        &.active b
-          color rgb(253, 87, 92)
+          &.active
+            color rgb(253, 87, 92)
+            i 
+              color rgb(253, 87, 92)
+        
 
           
        

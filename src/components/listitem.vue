@@ -53,6 +53,7 @@ export default {
   padding-left .1rem
   display flex
   flex-direction row
+  justify-content space-between
   .imgbox
     width 1.28rem
     height 100%
@@ -60,9 +61,9 @@ export default {
       width 1.26rem
       height 1.26rem
   .messagebox
-    flex 1
+    
     height 100%
-    padding-left .2rem
+    
     .d_title
       width 2.08rem
       height .40rem
