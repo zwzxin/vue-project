@@ -38,10 +38,10 @@ export default {
       position: absolute;
       top: 0.08rem;
       left: .2rem;
-      width: 16px;
-      height: 16px;
-      border-bottom: 2px solid #fff;
-      border-left: 2px solid #fff;
+      width: 13px;
+      height: 13px;
+      border-bottom: 1px solid #fff;
+      border-left: 1px solid #fff;
       -webkit-transform: rotate(45deg); 
       transform: rotate(45deg);
     img

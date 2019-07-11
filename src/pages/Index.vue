@@ -13,7 +13,10 @@
                 <i class="iconfont">&#xe6bf;</i>
                 <b>9.9包邮</b>
                 </router-link>
-              
+                <router-link to="/show" tag="li" active-class="active">
+                <i class="iconfont">&#xe665;</i>
+                <b>买家秀</b>
+                </router-link>
                 <router-link to="/Profile" tag="li" active-class="active">
                 <i class="iconfont">&#xe8a0;</i>
                 <b>我的</b>
@@ -46,6 +49,7 @@ data(){
         url('../aseets/iconfont/iconfont.woff') 
    font-weight bold
 }
+
 @import '~@/assets/styles/border.styl'
 .index-container
   height 100%
@@ -74,9 +78,10 @@ data(){
          .iconfont
            color: black ;
            font-size .32rem
+           line-height .32rem
            font-family: mytwoFont;
           b
-          
+
            font-weight normal
           &.active
             color rgb(253, 87, 92)

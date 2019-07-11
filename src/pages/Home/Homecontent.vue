@@ -36,26 +36,22 @@
            <img src="https://img.alicdn.com/imgextra/i2/2053469401/O1CN018T7S7S2JJhx0tTGNe_!!2053469401.gif_430x430q90.jpg" alt="">
          </div>
       <div class="home-icons">
-      <li>
+      <router-link to="/goodslistone" tag="li">
        <img src="https://m.huanle800.com/data/upload/waplink/1812/14/5c13a39ee8296.png">
        <b>疯狂抢</b>
-     </li>
-      <li>
+      </router-link>
+      <router-link to="/goodslisttwo" tag="li">
        <img src="https://m.huanle800.com/data/upload/waplink/1812/14/5c13a3a8d3461.png">
        <b>大领券</b>
-     </li>
-      <li>
+      </router-link>
+      <router-link to="/goodslistthree" tag="li">
        <img src="https://m.huanle800.com/data/upload/waplink/1812/14/5c13a3c7d16b2.png">
        <b>折上折</b>
-     </li>
-      <li>
+     </router-link>
+      <router-link to="/goodslistfour" tag="li">
        <img src="https://m.huanle800.com/data/upload/waplink/1812/14/5c13a3dee5e68.png">
        <b>品牌券</b>
-     </li>
-      <li>
-       <img src="https://m.huanle800.com/data/upload/waplink/1903/10/5c84dd4ed61bd.png">
-       <b>拼多多</b>
-     </li>
+     </router-link>
    </div>
    <div class="list-wrap">
      <listitem
@@ -185,13 +181,13 @@ export default {
     .miaosha-brand
       
       width 100%
-      margin-bottom 0.27rem
+      height 1.03rem
       img
         height 100%
         width 100%
     .home-icons
       height 1.02rem
-      padding-top 0.14rem
+      
       width 100%
       display flex
       li
@@ -207,7 +203,6 @@ export default {
          b
            font-weight normal
     
-       
 
 
 

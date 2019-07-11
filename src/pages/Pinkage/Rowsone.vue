@@ -62,6 +62,7 @@ export default {
 
 <style lang="stylus" scoped>
 @import '~@/assets/styles/ellipsis.styl'
+@import '~@/assets/styles/border'
 .rowone-cont
   height 2.06rem
   width 100%
@@ -75,6 +76,7 @@ export default {
     width 100%
     height 1.66rem
     overflow hidden
+    border-bottom 1px solid #eee
     .row-inner
       height 1.66rem
       overflow-x scroll
