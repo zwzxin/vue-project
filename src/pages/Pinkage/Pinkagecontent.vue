@@ -112,7 +112,7 @@ export default {
     .xian
       height 0.05rem
       width 100%
-      background black 
+      background #eee
     .youlike-title
       height .40rem
       width 100%

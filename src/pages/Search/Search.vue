@@ -3,9 +3,13 @@
         <div class="nav">
             <i class="icon-back" @click="handleClick"></i>
             <div class="ipt">
-                <input type="text">
+                <input type="text" placeholder="请输入关键字" v-model="keyword" @keyup ="get($event)" @keydown.down="selectDown()" @keydown.enter="search()">
                 <div class="btn">搜索</div>
+                <ul class="menu">
+                  <li v-for="(value,index) in myData" :key="index" @click="liclick">{{value}}</li>
+                </ul>
             </div>
+            
         </div>
     </div>
 </template>
@@ -58,7 +62,17 @@
             border-radius .3rem
             text-align center
             line-height .28rem
-
+        .menu
+            position absolute
+            left -.4rem
+            top .45rem
+            width 2.6rem
+            li
+              width 100%
+              height .36rem
+              padding-top 0.09rem
+              padding-bottom 0.09rem
+              
         
           
        
@@ -67,11 +81,74 @@
 </style>
 
 <script>
+import http from '../../utils/http'
 export default {
+    data(){
+      return{
+       myData:[],
+       keyword:'短袖'
+      }
+    },
     methods: {
     handleClick() {
       this.$router.go(-1)
+    },
+   async get(e){
+     
+       if(e.keyCode == 38 || e.keyCode == 40){
+         return;
+       }
+        let  result = await  http.get({
+              url:'/ajax/?m=ajax&a=kwarr',
+              params:{
+                 kw:this.keyword
+                }
+               })
+                console.log(this.keyword)
+        //console.log(result)
+       this.myData = result.data
+       console.log(this.myData)
+    },
+    liclick(){
+      var li = document.querySelector('li')
+      for(var i = 0;i<li.length;i++){
+        var val = li[i].innerHtml
+        console.log(val)
+      }
+
+    },
+   
     }
-  },
-}
+    }
+    // async mounted(){
+    //   console.log(this.txt)
+    //   let result = await http.get({
+    //     url:'/ajax/?m=ajax&a=kwarr',
+    //     params:{
+    //       kw:'this.txt'
+    //     }
+    //   })
+    //   this.myData = result.data
+    //   console.log(myData)
+    // }
+    //  get:function(event){
+    //         if(event.keyCode==38 || event.keyCode==40){
+    //           return;
+    //         }
+    //         if(event.keyCode==13){
+    //           window.open("https://www.baidu.com/s?wd="+this.txt);
+    //           this.txt="";
+    //         }
+    //         this.$http.jsonp("https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su",{
+    //           wd:this.txt
+    //         },{
+    //           jsonp:"cb"
+    //         }).then(function(res){
+    //           this.myData=res.data.s
+    //         },function(res){
+    //           alert(res.status);
+    //         });
+    //       },
+
+
 </script>

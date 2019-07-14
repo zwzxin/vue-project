@@ -106,14 +106,18 @@ export default {
                  ellipsis(100%)
                  width 100%
                  height .16rem
+                 color #666
                  font-size .12rem
                  padding 0.05rem 0 0
                  margin-bottom 0.05rem
                  overflow hidden
-                 color #666
+                 letter-spacing 0.02rem
+                 
+
                 .rowmoney
                    height .19rem
                    width 100%
+                   color #666
         .more
            width 100%
            height .50rem
